@@ -2,13 +2,6 @@ package com.company.basics.homework1;
 
 import java.util.Scanner;
 
-/*
-Знайти розвязки квадратного рівняння
-    ax^2 + bx + c = 0
-Користувач вводить a, b, c і отримує розв'язки рівняння
-або повідомлення, що їх нема.
- */
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
