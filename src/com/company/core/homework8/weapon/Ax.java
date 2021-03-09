@@ -2,7 +2,12 @@ package com.company.core.homework8.weapon;
 
 public class Ax extends Weapon {
     public Ax(int damage) {
-        this.damage = damage;
+        super(damage);
+    }
+
+    @Override
+    public void showWeapon() {
+        System.out.println("ax(" + this.damage + ")");
     }
 
     @Override

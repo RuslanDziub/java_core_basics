@@ -6,8 +6,15 @@ import com.company.core.homework8.weapon.Weapon;
 public class RobinHood extends Warriors {
 
     public RobinHood (int hp, Bow bow) {
-        this.hp = hp;
-        this.weapon = bow;
+        super(hp, bow);
+    }
+
+    @Override
+    public void showWarriors () {
+        System.out.println("Robin Hood");
+        System.out.println("hp : " + this.hp);
+        System.out.print("Weapon : ");
+        this.weapon.showWeapon();
     }
 
     @Override
