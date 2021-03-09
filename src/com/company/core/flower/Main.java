@@ -24,7 +24,7 @@ public class Main {
             bouquetOfTulip[i] = tulipYellow;
             bouquetOfTulip[j] = tulipRed;
         }
-        bouquetOfRose[50] = tulipRed;
+        bouquetOfTulip[50] = tulipRed;
 
         Flower[] bouquetVip = new Flower[25];
         for (int i = 0; i < 5; i++) {
@@ -34,15 +34,15 @@ public class Main {
             bouquetVip[i] = lilyWhite;
         }
 
-        System.out.println("Bouquet of rose. Price = " + calculatePriceBouquet(bouquetOfRose));
-        System.out.println("Bouquet of tulip. Price = " + calculatePriceBouquet(bouquetOfTulip));
-        System.out.println("Bouquet VIP. Price = " + calculatePriceBouquet(bouquetVip));
+        System.out.println("Bouquet of rose: price = " + calculatePriceBouquet(bouquetOfRose));
+        System.out.println("Bouquet of tulip: price = " + calculatePriceBouquet(bouquetOfTulip));
+        System.out.println("Bouquet VIP: price = " + calculatePriceBouquet(bouquetVip));
     }
 
-    public static double calculatePriceBouquet(Flower[] bouquet) { ///////////////////////////////////////////
+    public static double calculatePriceBouquet(Flower[] bouquet) {
         double priceBouquet = 0;
-        for (Flower flower : bouquet) {
-            priceBouquet += flower.getPrice();
+        for (int i = 0; i < bouquet.length; i++) {
+            priceBouquet += bouquet[i].getPrice();
         }
         return priceBouquet;
     }
