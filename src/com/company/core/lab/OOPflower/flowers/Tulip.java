@@ -1,4 +1,4 @@
-package com.company.core.flower.flowers;
+package com.company.core.lab.OOPflower.flowers;
 
 public class Tulip extends Flower {
     public Tulip (String color, double price) {

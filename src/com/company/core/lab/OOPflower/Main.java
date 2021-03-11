@@ -1,6 +1,6 @@
-package com.company.core.flower;
+package com.company.core.lab.OOPflower;
 
-import com.company.core.flower.flowers.*;
+import com.company.core.lab.OOPflower.flowers.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,17 +14,20 @@ public class Main {
         Rose roseWhite = new Rose("white", 25);
 
         Flower[] bouquetOfRose = new Flower[101];
-        for (int i = 0; i < 100; i++) {
-            bouquetOfRose[i] = roseRed;
+        for (int i = 0; i < bouquetOfRose.length; i++) {
+            if(i == bouquetOfRose.length - 1) {
+                bouquetOfRose[i] = roseWhite;
+            } else {
+                bouquetOfRose[i] = roseRed;
+            }
         }
-        bouquetOfRose[100] = roseWhite;
+
 
         Flower[] bouquetOfTulip = new Flower[51];
-        for (int i = 0, j = 25; i < 25 && j < 50; i++, j++) {
+        for (int i = 0, j = 25; i < 25 || j < 51; i++, j++) {
             bouquetOfTulip[i] = tulipYellow;
             bouquetOfTulip[j] = tulipRed;
         }
-        bouquetOfTulip[50] = tulipRed;
 
         Flower[] bouquetVip = new Flower[25];
         for (int i = 0; i < 5; i++) {

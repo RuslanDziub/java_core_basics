@@ -1,4 +1,4 @@
-package com.company.core.CoffeeMachine.CoffiMachines;
+package com.company.core.lab.OOPCoffeeMachine.CoffiMachines;
 
 public class CoffeeGrinder {
     private int speed = 1;

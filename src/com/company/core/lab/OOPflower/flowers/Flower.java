@@ -1,4 +1,4 @@
-package com.company.core.flower.flowers;
+package com.company.core.lab.OOPflower.flowers;
 
 public abstract class Flower {
     protected String color;

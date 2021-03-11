@@ -1,8 +1,8 @@
-package com.company.core.CoffeeMachine;
+package com.company.core.lab.OOPCoffeeMachine;
 
-import com.company.core.CoffeeMachine.CoffiMachines.CoffeeGrinder;
-import com.company.core.CoffeeMachine.CoffiMachines.CoffeeMaker;
-import com.company.core.CoffeeMachine.CoffiMachines.LateMachine;
+import com.company.core.lab.OOPCoffeeMachine.CoffiMachines.CoffeeGrinder;
+import com.company.core.lab.OOPCoffeeMachine.CoffiMachines.CoffeeMaker;
+import com.company.core.lab.OOPCoffeeMachine.CoffiMachines.LateMachine;
 
 public class Main {
     public static void main(String[] args) {
